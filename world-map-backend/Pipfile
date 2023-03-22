@@ -5,8 +5,18 @@ name = "pypi"
 
 [packages]
 django = "*"
+django-debug-toolbar = "*"
+pep8 = "*"
+autopep8 = "*"
+mysqlclient = "*"
+djangorestframework = "*"
+waitress = "*"
+pillow = "*"
 
 [dev-packages]
+django = "*"
+pytest = "*"
+pytest-django = "*"
 
 [requires]
 python_version = "3.10"

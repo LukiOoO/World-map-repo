@@ -24,9 +24,11 @@ const AsiaInfo = () => {
 
   return (
     <React.Fragment>
-      <h1 className="h1-info"> Info:</h1>
-      <TableInfo displayData={displayData} />
-      <Pagination pageCount={pageCount} changePage={changePage} />
+      <div className="info">
+        <h1 className="h1-info"> Info:</h1>
+        <TableInfo displayData={displayData} />
+        <Pagination pageCount={pageCount} changePage={changePage} />
+      </div>
     </React.Fragment>
   );
 };

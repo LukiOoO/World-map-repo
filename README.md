@@ -1,6 +1,6 @@
 # World map app
 
-Simple app for learning math using react and django rest api
+Simple app using react and django rest api
 
 ## How to run
 

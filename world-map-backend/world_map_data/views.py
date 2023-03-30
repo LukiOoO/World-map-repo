@@ -5,9 +5,6 @@ from . import serializers
 from django.http import HttpResponse
 
 
-# Create your views here.
-
-
 class BaseContinentView(ReadOnlyModelViewSet):
     serializer_class = serializers.CountrySerializer
     continent = None

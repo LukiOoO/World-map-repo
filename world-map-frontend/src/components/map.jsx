@@ -3,57 +3,12 @@ import * as THREE from "three";
 import gsap from "gsap";
 import { debounce } from "lodash";
 import { useHistory } from "react-router-dom";
-const myVertexShaderCoce = () => {
-  return ` 
-  varying vec2 vertexUV;
-  varying vec3 vertexNormal;
-  
-  void main() {
-    vertexUV = uv;
-    vertexNormal = normalize(normalMatrix * normal);
-
-    gl_Position = projectionMatrix * 
-    modelViewMatrix * vec4( position, 1.0 );
-  }`;
-};
-const myFragmentShaderCoce = () => {
-  return ` 
-  uniform sampler2D globeTexture;
-
-  varying vec2 vertexUV;
-  varying vec3 vertexNormal;
-  
-  void main() {
-    float intensity = 1.05 - dot(vertexNormal, vec3(0.0, 0.0,
-      1.0));
-
-    vec3 atmosphere = vec3(0.3, 0.6, 1.0) * pow(intensity, 1.5);
-    gl_FragColor = vec4(atmosphere + 
-    texture2D(globeTexture, vertexUV).xyz, 1.0) ;
-  }`;
-};
-const atmosphereVertexShaderCoce = () => {
-  return ` 
-  varying vec3 vertexNormal;
-  
-  void main() {
-    vertexNormal = normalize(normalMatrix * normal);
-
-    gl_Position = projectionMatrix * 
-    modelViewMatrix * vec4( position, 0.9 );
-  }`;
-};
-const atmosphereFragmentShaderCoce = () => {
-  return ` 
-  varying vec3 vertexNormal;
-  
-  void main() {
-    float intensity = pow(0.6 - dot(vertexNormal, vec3(0, 0, 1.0
-      )), 2.0);
-
-      gl_FragColor = vec4(0.3, 0.6, 1.0, 1.0) * intensity;
-  }`;
-};
+import {
+  myVertexShaderCoce,
+  myFragmentShaderCoce,
+  atmosphereVertexShaderCoce,
+  atmosphereFragmentShaderCoce,
+} from "../vertex_shaders/vertex_code";
 
 const Map = () => {
   const mountRef = useRef(null);
@@ -217,7 +172,6 @@ const Map = () => {
         smallSphere7,
       ];
       let intersects = raycaster.intersectObjects(objtorecas);
-      // Sprawdź, czy wykryto kliknięcie na kuli
       for (let i = 0; i < intersects.length; i++) {
         if (intersects[i].object === smallSphere1) {
           history.push("/south-america-info");

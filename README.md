@@ -1,4 +1,4 @@
-# Math Learning
+# World map app
 
 Simple app for learning math using react and django rest api
 
@@ -10,7 +10,7 @@ Simple app for learning math using react and django rest api
 
 3.  install mysqlserver on your computer and mysqlworkbeanch or similar program
 
-4.  Clone repo git-clone https://github.com/LukiOoO/Math-Lerning-repo.git
+4.  Clone repo git-clone https://github.com/LukiOoO/World-map-repo.git
 
 5.  in Mysql Server Create a database named world_map_app and import the data from the file world-map-app-database.sql into it
 

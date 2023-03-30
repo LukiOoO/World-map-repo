@@ -12,6 +12,7 @@ mysqlclient = "*"
 djangorestframework = "*"
 waitress = "*"
 pillow = "*"
+django-cors-headers = "*"
 
 [dev-packages]
 django = "*"

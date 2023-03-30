@@ -6,7 +6,7 @@ router = SimpleRouter()
 router.register('africa', views.AfricaView, basename='AfricaView')
 router.register('antarctica', views.AntarcticaView, basename='AntarcticaView')
 router.register('asia', views.AsiaView, basename='AsiaView')
-router.register('oceania', views.OceaniaView, basename='OceaniaView')
+router.register('australia', views.OceaniaView, basename='OceaniaView')
 router.register('europe', views.EuropeView, basename='EuropeView')
 router.register('north-america', views.NorthAmericaView,
                 basename='NorthAmericaView')

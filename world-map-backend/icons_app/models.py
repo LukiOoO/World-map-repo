@@ -6,4 +6,4 @@ from django.db import models
 class Pictures(models.Model):
     id = models.IntegerField(primary_key=True)
     image_field = models.ImageField(
-        upload_to='icons_app/static/images', null=True)
+        upload_to='static/icons_app/images', null=True)

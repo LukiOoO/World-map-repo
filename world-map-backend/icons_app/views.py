@@ -19,6 +19,6 @@ class BasePictureViewSet(ReadOnlyModelViewSet):
         return {'request': self.request}
 
 
-class HomePageViewSet(BasePictureViewSet):
+class LogoViewSet(BasePictureViewSet):
     model = models.Pictures
     id = 1

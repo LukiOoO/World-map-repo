@@ -19,7 +19,7 @@ Simple app for learning math using react and django rest api
         DATABASES = {
         'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'math_learning',
+        'NAME': 'world_map_app',
         'HOST': 'localhost',
         'USER': 'root',
         'PASSWORD': 'Your Password'
@@ -42,7 +42,7 @@ python manage.py runserver
 
         System check identified no issues (0 silenced).
         March 05, 2023 - 17:00:24
-        Django version 4.1.7, using settings 'math_lerning_backend.settings.dev'
+        Django version 4.1.7, using settings 'world-map-backend.settings.dev'
         Starting development server at http://127.0.0.1:8000/
         Quit the server with CTRL-BREAK
 

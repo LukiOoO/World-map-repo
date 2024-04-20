@@ -5,7 +5,7 @@ const Footer = () => {
         <div className="row">
           <div className="col-sm-12 col-md-6">
             <p className="text-justify">
-              MathSite.com <i>Made by</i>LukiOOOOOOOO{" "}
+              WorldMap.com <i>Made by</i>LukiOOOOOOOO{" "}
             </p>
           </div>
         </div>

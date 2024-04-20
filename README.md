@@ -4,7 +4,7 @@ Simple app using react and django rest api
 
 ## How to run
 
-1.  Install python 3.10 on your computer when installing, check add path to python
+1.  Install python 3.12 on your computer when installing, check add path to python
 
 2.  Install Node.js on Your Computer
 
@@ -51,4 +51,13 @@ python manage.py runserver
 
 13. to start the server frontend type npm start and you should open a window with a properly working application
 
-## to correctly select a marker on a planet you should scroll down view png
+## The application allows you to rotate the globe and click on the markers which shows tables with data about countries
+![table.png](table.png)
+
+
+
+
+
+
+## To correctly select a marker on a planet you should scroll down view png
+![wrong.png](wrong.PNG)![correctly.png](correctly.PNG)

@@ -2,7 +2,7 @@
 
 ## Simple app using react and django rest api
 #The application allows you to rotate the globe and click on the markers which shows tables with data about countries
-![table.png](table.png
+![table.png](table.png)
 
 ## How to run
 

@@ -1,6 +1,8 @@
 # World map app
 
-Simple app using react and django rest api
+## Simple app using react and django rest api
+#The application allows you to rotate the globe and click on the markers which shows tables with data about countries
+![table.png](table.png
 
 ## How to run
 
@@ -50,14 +52,6 @@ python manage.py runserver
     make sure you haven't opened a terminal with pipenv enabled if you have, type deactivate And type npm i
 
 13. to start the server frontend type npm start and you should open a window with a properly working application
-
-## The application allows you to rotate the globe and click on the markers which shows tables with data about countries
-![table.png](table.png)
-
-
-
-
-
 
 ## To correctly select a marker on a planet you should scroll down view png
 ![wrong.png](wrong.PNG)![correctly.png](correctly.PNG)
